@@ -1,51 +1,102 @@
-/* grab the section of the p:first child */
-section > p:first-child{
-    font-weight: bold;
-    color: #0056b3; /* the reason for 6 numbers if rbg (00 = red, 00 = blue, 00 = green) the amount of each color in the overall color */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
 }
 
-ul li:first-child {
-    font-weight: bold;
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-table tr:hover {
-    background-color: #f5f5f5;
+nav {
+    display: block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
 }
 
-audio:focus, video:focus, audio:hover, video:hover {
-    outline: 2px solid #ff4500;
-    cursor: pointer;
+nav a {
+    color: #9dafff;
+    text-decoration: none;
 }
 
 nav a:hover {
-    color: yellow;
     text-decoration: underline;
-
 }
 
-img {
-    width: 150px;
-    height: 150px;
-    border: 3px solid blue;
-    border-radius: 50%;
+section, article {
+    padding: 20px;
     margin: 20px 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-img:hover {
-    border: 3px solid purple;
-    border-style: double;
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f7f7f7;
+}
+
+tr:hover {
+    background-color: #f2f2f2;
 }
 
 button {
-    background-color: #0056b3;
+    padding: 10px 20px;
+    background-color: #28a745;
     color: white;
-    border-radius: 5%;
-    padding: 10px 15px;
-    border-style: hidden;
     border: none;
-    transition: background-color 1.5s;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #333333;
+    background-color: #218838;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Example of using the position property */
+aside {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    width: 250px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Styling the testimonials block to stand out */
+blockquote {
+    font-style: italic;
+    color: #555;
+}
+
+        img {
+    width:100px; 
+    height:100px; 
+    border-radius:50%;
 }
