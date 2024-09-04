@@ -22,3 +22,30 @@ nav a:hover {
     text-decoration: underline;
 
 }
+
+img {
+    width: 150px;
+    height: 150px;
+    border: 3px solid blue;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+img:hover {
+    border: 3px solid purple;
+    border-style: double;
+}
+
+button {
+    background-color: #0056b3;
+    color: white;
+    border-radius: 5%;
+    padding: 10px 15px;
+    border-style: hidden;
+    border: none;
+    transition: background-color 1.5s;
+}
+
+button:hover {
+    background-color: #333333;
+}
